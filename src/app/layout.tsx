@@ -14,8 +14,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`antialiased`}
+        className={`bg-slate-100 dark:bg-slate-800 dark:text-white antialiased`}
       >
+        <header className="text-center space-x-1 mb-5">
+          <h1 className="text-3xl font-bold">Taikai</h1>
+          <h2 className="text-sm">A tournament management tool</h2>
+        </header>
         {children}
       </body>
     </html>
