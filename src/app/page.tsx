@@ -12,7 +12,7 @@ export default function TournamentForm() {
   }
 
   return (
-    <div className="mx-auto flex min-h-[500px] w-11/12 max-w-lg flex-col justify-center rounded-lg bg-white p-8 shadow-lg ring-2 ring-blue-500/50 dark:bg-slate-900">
+    <div className="mx-auto flex min-h-125 w-11/12 max-w-lg flex-col justify-center rounded-lg bg-white p-8 shadow-lg ring-2 ring-blue-500/50 dark:bg-slate-900">
       <h1 className="mb-8 text-center text-5xl font-extrabold tracking-wide drop-shadow-lg">
         Create a New Tournament
       </h1>
