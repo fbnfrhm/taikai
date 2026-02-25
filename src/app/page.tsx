@@ -12,42 +12,63 @@ export default function TournamentForm() {
   }
 
   return (
-    <div className="mx-auto flex w-8/9 flex-col items-center rounded-lg bg-white p-8 pt-10 pb-10 shadow-lg ring-2 shadow-blue-500/50 ring-blue-500/50 lg:w-1/2 dark:bg-slate-900">
-      <h1 className="text-center text-4xl font-bold">
+    <div className="mx-auto flex min-h-[500px] w-11/12 max-w-lg flex-col justify-center rounded-lg bg-white p-8 shadow-lg ring-2 ring-blue-500/50 dark:bg-slate-900">
+      <h1 className="mb-8 text-center text-5xl font-extrabold tracking-wide drop-shadow-lg">
         Create a New Tournament
       </h1>
       <form
-        className="flex w-full flex-col space-y-1 lg:w-1/2"
+        className="flex w-full flex-col space-y-6 text-lg"
         action={createTournament}
       >
-        <label htmlFor="name">Tournament Name</label>
-        <input
-          className="rounded border-2 border-black bg-white p-1 text-black"
-          type="text"
-          name="name"
-          id="name"
-          placeholder="Special Tournament 2026"
-        />
+        <div className="flex w-full flex-col space-y-1">
+          <label
+            htmlFor="name"
+            className="w-full text-left font-medium text-gray-700 dark:text-gray-200"
+          >
+            Tournament Name
+          </label>
+          <input
+            className="w-full rounded-lg border border-gray-300 bg-gray-50 px-3 py-2 text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Special Tournament 2026"
+          />
+        </div>
 
-        <label htmlFor="location">Location</label>
-        <input
-          className="rounded border-2 border-black bg-white p-1 text-black"
-          type="text"
-          name="location"
-          id="location"
-          placeholder="City, State, Country"
-        />
+        <div className="flex w-full flex-col space-y-1">
+          <label
+            htmlFor="location"
+            className="w-full text-left font-medium text-gray-700 dark:text-gray-200"
+          >
+            Location
+          </label>
+          <input
+            className="w-full rounded-lg border border-gray-300 bg-gray-50 px-3 py-2 text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100"
+            type="text"
+            name="location"
+            id="location"
+            placeholder="City, State, Country"
+          />
+        </div>
 
-        <label htmlFor="date">Date</label>
-        <input
-          className="rounded border-2 border-black bg-white p-1 text-black"
-          type="date"
-          name="date"
-          id="date"
-        />
+        <div className="flex w-full flex-col space-y-1">
+          <label
+            htmlFor="date"
+            className="w-full text-left font-medium text-gray-700 dark:text-gray-200"
+          >
+            Date
+          </label>
+          <input
+            className="w-full rounded-lg border border-gray-300 bg-gray-50 px-3 py-2 text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100"
+            type="date"
+            name="date"
+            id="date"
+          />
+        </div>
 
         <input
-          className="mt-2 rounded border-2 border-black bg-blue-300 p-2 text-xl font-bold text-black"
+          className="mt-6 w-full rounded bg-blue-600 px-6 py-3 text-lg font-semibold text-white shadow-md transition-colors duration-200 hover:bg-blue-700 focus:ring-2 focus:ring-blue-400 focus:outline-none"
           type="submit"
           value="Create Tournament"
         />
